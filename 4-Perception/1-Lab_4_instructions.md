@@ -77,8 +77,6 @@ Task_6:
     * $`ros2 node info <node_name>`
     * $`ros2 topic echo <topic_name>`
 ## Week 10
-Happy spring break! There is no lab this week, feel free to finish up your object detection algorithm and image subscriber from task_5 in order to prepare for next week's assignment.
-## Week 11
 This week you will control your robot in simulation to follow a red ball.
 ### Test the simulator (10 min):
 1. Re-install sim_ws by following the updated instructions in [2-ROS_2_installation_guide.md](../0-Setup/2-ROS_2_installation_guide.md). You may delete your old sim_ws. For the time being, Mac users will need to use lab computers for robot simulation.
@@ -157,3 +155,4 @@ Deviating from the names provided in the lab sheet will result in penalties.
 * 35 pts: Week 9, Part B, `task_5` pkg
 * 40 pts: Week 11, Part C, `task_6` pkg
 * +20 pts: Week 11, Part D, `task_6` pkg - Extra Credit
+
