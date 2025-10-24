@@ -19,7 +19,7 @@ The project gives a total of 100 points for what we call basic tasks. In additio
         * Extra credit is available; your `task1.py` file will be run on a second, unknown world. 
         * You will have a maximum of 10 minutes to complete both worlds.
         * The code required for this task needs to go inside the `task1.py` file.
-        * The given world can be spawned by running the `turtlebot3_house.launch.py` file. The `mapper.launch.py`is the main launch file for this task, which already includes a SLAM node and the `task1.py` node.
+        * The given world can be spawned by running the `turtlebot3_house.launch.py` file. The `mapper.launch.py`is the main launch file for this task, which already includes a SLAM node and the `task1.py` node. You may use the following command to test your codes: `ros2 launch turtlebot3_gazebo mapper.launch.py`. 
         
 * **Task 2 - Navigation with Static Obstacles:** In this task, you will use an A∗ path planner in the same way that you did for Lab 3. You will be able to use the AMCL node for localization, and path planning and path following algorithms must be part of your solution. This task is almost identical to Lab 3, however we will spawn in static obstacles that you must also avoid. 
     * Notes:
@@ -28,7 +28,7 @@ The project gives a total of 100 points for what we call basic tasks. In additio
         * To grade this task, we will assign goal poses sequentially, then measure the time cost of all successful collision-free navigations to get a weighted score.
         * The code required for this task needs to go inside the `task2.py` file.
         * Extra credit is available for implementation of RRT* algorithm for local path replanning. This work should be implemented in a file called `task2_bonus.py`.
-        * The given world can be spawned by running the `turtlebot3_house.launch.py` file. The `navigator.launch.py`is the main launch file for this task, which already includes a SLAM node and the `task2.py` node.
+        * The given world can be spawned by running the `turtlebot3_house.launch.py` file. The `navigator.launch.py`is the main launch file for this task, which already includes a SLAM node and the `task2.py` node. You may use the following command to test your codes: `ros2 launch turtlebot3_gazebo navigator.launch.py static_obstacles:=true`. To test for the bonus task, add `bonus:=true`. 
 
 * **Task 3 - Search and Localize:** In this task, large colored balls will be randomly spawned throughout the house. You are tasked with creating a search algorithm that can find, identify, and give an x, y estimate of the balls in the world. In order to successfully complete this task, you will need to reuse your obstacle avoidance strategy from Task 2 while building in object detection and localization logic. 
     * Notes:
@@ -37,10 +37,11 @@ The project gives a total of 100 points for what we call basic tasks. In additio
         * For full credit you are required to identify the location of three balls. Error in the localization will deduct points from the total.
         * Extra credit is available for the fastest solutions. The speed at which you can identify all three objects will be hindered by any error in your localization so that the "fastest solutions" have the best balance between speed and accuracy.
         * The code required for this task needs to go inside the `task3.py` file.
-        * The given world can be spawned by running the `turtlebot3_house.launch.py` file. The `navigator.launch.py`is the main launch file for this task, which already includes a SLAM node and the `task3.py` node, depending on the provided input argument enabling dynamic obstacles.
+        * The given world can be spawned by running the `turtlebot3_house.launch.py` file. The `navigator.launch.py`is the main launch file for this task, which already includes a SLAM node and the `task3.py` node, depending on the provided input argument enabling dynamic obstacles. You may use the following command to test your codes: `ros2 launch turtlebot3_gazebo navigator.launch.py spawn_objects:=true`.
 
 ### Guidelines
-* To aid in completing this project, we have created a repository with the base files that you will need to solve all the tasks. You can clone these files from the following [link](https://github.com/naslab-projects/sim_ws/tree/main), available in the `src/turtlebot3_gazebo/src/lab4` directory. 
+* Make sure to use relative path instead of absolute path in your codes.If we cannot run your codes on a different computer, 
+* To aid in completing this project, we have created a repository with the base files that you will need to solve all the tasks. You can clone these files from the following [link](https://github.com/LesterYHZ/sim_ws_Fall2025/tree/main), available in the `src/turtlebot3_gazebo/src/lab4` directory. 
 * Your solution Python script for each task should be self-sufficent without depending on other scripts (from the other tasks or otherwise).
 * Please only depend on commonly used Python (ROS2) packages like `numpy`, `rclpy`, `math`, and `cv2`.
 * Do not submit extra files for any tasks. Each task file should be able to function without relying on another task file. Any major problem while running your files will be subject to point deductions. 
@@ -118,3 +119,4 @@ Finally, you will give a 5-7 slide presentation. This must contain a concise exp
 * (up to 10 pts) - Extra Credit - Successful unknown world mapping for Task 1.
 * (up to 10 pts) - Extra Credit - RRT* Local Path Replanning.
 * (up to 10 pts) - Extra Credit - Top 50% fastest solutions for Task 3.
+
