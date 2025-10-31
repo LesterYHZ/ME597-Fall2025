@@ -40,7 +40,11 @@ The project gives a total of 100 points for what we call basic tasks. In additio
         * The given world can be spawned by running the `turtlebot3_house.launch.py` file. The `navigator.launch.py`is the main launch file for this task, which already includes a SLAM node and the `task3.py` node, depending on the provided input argument enabling dynamic obstacles. You may use the following command to test your codes: `ros2 launch turtlebot3_gazebo navigator.launch.py spawn_objects:=true`.
 
 ### Guidelines
-* Make sure to use relative path instead of absolute path in your codes. If your codes cannot be run on a different computer with a different user or workspace name, the codes won't be graded and a zero will be given as the task grade. 
+* Make sure to use relative path instead of absolute path in your codes. If your codes cannot be run on a different computer with a different user or workspace name, the codes won't be graded and a zero will be given as the task grade. If you are not sure how to use relative path, here is a hint:
+  
+        package_share_directory = ament_index_python.packages.get_package_share_directory('turtlebot3_gazebo')
+        map_yaml_path = os.path.join(package_share_directory, 'maps', map_name + '.yaml')
+  
 * To aid in completing this project, we have created a repository with the base files that you will need to solve all the tasks. You can clone these files from the following [link](https://github.com/LesterYHZ/sim_ws_Fall2025/tree/main), available in the `src/turtlebot3_gazebo/src/lab4` directory. 
 * Your solution Python script for each task should be self-sufficent without depending on other scripts (from the other tasks or otherwise).
 * Please only depend on commonly used Python (ROS2) packages like `numpy`, `rclpy`, `math`, and `cv2`.
@@ -119,6 +123,7 @@ Finally, you will give a 5-7 slide presentation. This must contain a concise exp
 * (up to 10 pts) - Extra Credit - Successful unknown world mapping for Task 1.
 * (up to 10 pts) - Extra Credit - RRT* Local Path Replanning.
 * (up to 10 pts) - Extra Credit - Top 50% fastest solutions for Task 3.
+
 
 
 
