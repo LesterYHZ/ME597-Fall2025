@@ -30,7 +30,7 @@ The project gives a total of 100 points for what we call basic tasks. In additio
         * Extra credit is available for implementation of RRT \* algorithm for local path replanning. This work should be implemented in a file called `task2_bonus.py`.
         * The given world can be spawned by running the `turtlebot3_house.launch.py` file. The `navigator.launch.py`is the main launch file for this task, which already includes a SLAM node and the `task2.py` node. You may use the following command to test your codes: `ros2 launch turtlebot3_gazebo navigator.launch.py static_obstacles:=true`. To test for the bonus task, add `bonus:=true`. 
 
-* **Task 3 - Search and Localize:** In this task, large colored balls will be randomly spawned throughout the house. You are tasked with creating a search algorithm that can find, identify, and give an x, y estimate of the balls in the world. In order to successfully complete this task, you will need to reuse your obstacle avoidance strategy from Task 2 while building in object detection and localization logic. 
+* **Task 3 - Search and Localize:** In this task, large colored balls (in red, blue, green) will be randomly spawned throughout the house. You are tasked with creating a search algorithm that can find, identify, and give an x, y estimate of the balls in the world. In order to successfully complete this task, you will need to reuse your obstacle avoidance strategy from Task 2 while building in object detection and localization logic. 
     * Notes:
         * The ball colors will be easy to identify from the surroundings.
         * We will change the location of the balls when grading to avoid hardcoding solutions.
@@ -123,6 +123,7 @@ Finally, you will give a 5-7 slide presentation. This must contain a concise exp
 * (up to 10 pts) - Extra Credit - Successful unknown world mapping for Task 1.
 * (up to 10 pts) - Extra Credit - RRT* Local Path Replanning.
 * (up to 10 pts) - Extra Credit - Top 50% fastest solutions for Task 3.
+
 
 
 
