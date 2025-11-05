@@ -117,11 +117,12 @@ Finally, you will give a 5-7 slide presentation. This must contain a concise exp
 * 36 pts: Task 1
 * 18 pts: Task 2
 * 36 pts: Task 3
-* 10 pts: 5-7 Presentation Slides
-* (up to -10 pts) - Negative points - Missed final project presentation.
+* 20 pts: 5-7 Presentation Slides
+* (up to -20 pts) - Negative points - Missed final project presentation.
 * (up to 10 pts) - Extra Credit - Successful unknown world mapping for Task 1.
 * (up to 10 pts) - Extra Credit - RRT* Local Path Replanning.
 * (up to 10 pts) - Extra Credit - Top 50% fastest solutions for Task 3.
+
 
 
 
